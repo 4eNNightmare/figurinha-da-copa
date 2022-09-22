@@ -1,6 +1,7 @@
 {
   "name": "figurinha-da-copa",
   "version": "1.0.0",
+  "homepage": "figurinha-da-copa/",
   "main": "src/index.js",
   "dependencies": {
     "classnames": "^2.3.2",
@@ -9,8 +10,7 @@
     "cra-template": "1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@babel/runtime": "^7.13.8",
