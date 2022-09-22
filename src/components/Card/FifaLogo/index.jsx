@@ -1,6 +1,6 @@
 import c from "classnames";
-import { container } from "./styles.module.css";
+import styles from "./styles.module.css";
 
 export default function FifaLogo() {
-  return <div className={c(container)} />;
+  return <div className={c(styles.container)} />;
 }

@@ -1,11 +1,11 @@
 import c from "classnames";
-import { container, text } from "./styles.module.css";
+import styles from "./styles.module.css";
 
 export default function Weight({ weight }) {
   return (
-    <div className={c(container)}>
+    <div className={c(styles.container)}>
       <WeightSVG />
-      <div className={c(text)}>{weight}</div>
+      <div className={c(styles.text)}>{weight}</div>
     </div>
   );
 }

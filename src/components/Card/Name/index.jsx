@@ -1,17 +1,12 @@
 import c from "classnames";
-import {
-  container,
-  text,
-  decorationLeft,
-  decorationRight
-} from "./styles.module.css";
+import styles from "./styles.module.css";
 
 export default function Name({ name }) {
   return (
-    <div className={c(container)}>
-      <div className={c(text)}>{name}</div>
-      <Decoration className={c(decorationLeft)} />
-      <Decoration className={c(decorationRight)} />
+    <div className={c(styles.container)}>
+      <div className={c(styles.text)}>{name}</div>
+      <Decoration className={c(styles.decorationLeft)} />
+      <Decoration className={c(styles.decorationRight)} />
     </div>
   );
 }
@@ -40,9 +35,9 @@ function Decoration({ className }) {
           width="17"
           height="35"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

@@ -1,10 +1,10 @@
 import c from "classnames";
-import { container, text } from "./styles.module.css";
+import styles from "./styles.module.css";
 
 export default function Year({ year }) {
   return (
-    <div className={c(container)}>
-      <div className={c(text)}>{year}</div>
+    <div className={c(styles.container)}>
+      <div className={c(styles.text)}>{year}</div>
     </div>
   );
 }

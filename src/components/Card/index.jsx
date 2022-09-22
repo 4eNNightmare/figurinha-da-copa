@@ -1,7 +1,7 @@
 import Background from "./Background";
 import Photo from "./Photo";
 import c from "classnames";
-import { card } from "./styles.module.css";
+import styles from "./styles.module.css";
 import FifaLogo from "./FifaLogo";
 import Flag from "./Flag";
 import Name from "./Name";
@@ -24,7 +24,7 @@ export default function Card({
   weight
 }) {
   return (
-    <div id={id} className={c(card)}>
+    <div id={id} className={c(styles.card)}>
       <Background color1={color1} color2={color2} />
       <Photo photoUrl={photoUrl} />
       <Flag code={code} />
