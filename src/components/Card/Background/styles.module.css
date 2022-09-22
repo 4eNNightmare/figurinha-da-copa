@@ -1,0 +1,38 @@
+.background {
+  --bg-color-1: #5a31a0;
+  --bg-color-2: #3eda8a;
+  height: var(--height);
+  width: var(--width);
+  background-color: var(--bg-color-1);
+  overflow: hidden;
+  position: absolute;
+}
+
+.gradient {
+  background: radial-gradient(circle, var(--bg-color-2) 0%, transparent 50%);
+  position: absolute;
+  width: calc(var(--width));
+  height: calc(var(--width));
+  transform: scale(1.6);
+  filter: blur(10px);
+}
+
+.topLeft {
+  top: calc(var(--width) / 2 * -1);
+  left: calc(var(--width) / 2 * -1);
+}
+
+.topRight {
+  top: calc(var(--width) / 2 * -1);
+  right: calc(var(--width) / 2 * -1);
+}
+
+.bottomLeft {
+  bottom: calc(var(--width) / 2 * -1);
+  left: calc(var(--width) / 2 * -1);
+}
+
+.bottomRight {
+  bottom: calc(var(--width) / 2 * -1);
+  right: calc(var(--width) / 2 * -1);
+}

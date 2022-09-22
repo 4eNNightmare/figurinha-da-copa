@@ -1,0 +1,28 @@
+.container {
+  --offset: calc(var(--height) / 100);
+  --n-offset: calc(var(--offset) * -1);
+  --x-offset: calc(var(--offset) * 3);
+  --padding: calc(var(--width) * 84 / 380 + var(--offset) * 2);
+
+  width: calc(var(--width) - var(--padding));
+  height: calc(var(--height) - var(--padding) / 1.2);
+  overflow: hidden;
+  position: absolute;
+  bottom: var(--padding);
+  left: calc(var(--padding) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  background-image: var(--photo-url);
+  background-size: cover;
+  background-position: center;
+  width: calc(100% - 2 * var(--offset));
+  height: 100%;
+  -webkit-filter: drop-shadow(var(--n-offset) 0px 0px white)
+    drop-shadow(0 var(--n-offset) 0 white) drop-shadow(var(--offset) 0 0 white)
+    drop-shadow(0 var(--offset) 0 white)
+    drop-shadow(var(--x-offset) var(--x-offset) 0px rgba(0, 0, 0, 0.4));
+}

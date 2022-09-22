@@ -1,0 +1,21 @@
+.container {
+  position: absolute;
+  right: 15px;
+  top: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.container > svg {
+  transform: scale(0.75);
+}
+
+.text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}

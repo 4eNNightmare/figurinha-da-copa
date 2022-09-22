@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  background-color: darkred;
+  bottom: 28px;
+  left: calc((var(--width) - 100px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: #bfbaae;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  background-color: darkred;
+  width: 8px;
+  height: 8px;
+  top: 9px;
+  left: -8px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  background-color: darkred;
+  width: 8px;
+  height: 8px;
+  top: 9px;
+  right: -8px;
+}
